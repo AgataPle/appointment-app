@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class Personel extends Component {
     render() {
         return (
-            <>
+            <div className="personel-all">
                 <div className="personel-schema personel-section-a">
                     <img src='../images/personel.png' className="personel"/>
                     <div className="personel-info">
@@ -68,7 +68,7 @@ export default class Personel extends Component {
                 </div>
 
 
-            </>
+            </div>
         )
     }
 }

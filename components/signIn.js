@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 
-export default class ContactForm extends Component {
+export default class SignIn extends Component {
     state = {
         name: '',
         email: '',
@@ -58,7 +58,7 @@ export default class ContactForm extends Component {
                             <p key={i}>{err}</p>
                         )}
                         <label>Imię i nazwisko</label>
-                        <input type="text" name='name' placeholder='Name' style={style}
+                        <input type="text" name='name' placeholder='Imię i nazwisko' style={style}
                                value={this.state.name}
                                onChange={this.handleChange}
                         />
@@ -68,10 +68,24 @@ export default class ContactForm extends Component {
                                onChange={this.handleChange}
                         />
                         <label>Treść wiadomości</label>
-                        <textarea name='message' placeholder='Message' style={style}
+                        <textarea name='message' placeholder='Wiadomość' style={style}
                                   value={this.state.message}
                                   onChange={this.handleChange}
                         />
+                        <select>
+                            <option value="Zajęcia1">Zajęcia 1</option>
+                            <option value="Zajęcia2">Zajęcia 2</option>
+                            <option selected value="Zajęcia3">Zajęcia 3</option>
+                            <option value="Zajęcia4">Zajęcia 4</option>
+                            <option value="Zajęcia5">Zajęcia 5</option>
+                        </select>
+                        <select>
+                            <option value="Zajęcia1">Poniedziałek</option>
+                            <option value="Zajęcia2">Wtorek</option>
+                            <option selected value="Zajęcia3">Środa</option>
+                            <option value="Zajęcia4">Czwartek</option>
+                            <option value="Zajęcia5">Piątek</option>
+                        </select>
                         <button className="sign-in">Zapisz się!</button>
                     </form>
                 </div>

@@ -59,6 +59,18 @@
   margin: 5px;
 }
 
+.banner-contact {
+  background-image: url("../images/bannerContact.jpg");
+  height: 560px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
 /*BANNER*/
 .banner {
   background-image: url("../images/banner.jpg");
@@ -96,6 +108,23 @@
 }
 
 /*ABOUT*/
+.banner-personel {
+  background-image: url("../images/bannerPersonel.jpg");
+  height: 560px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.personel-all {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .personel-schema {
   margin-right: 100px;
   margin-left: 100px;
@@ -122,18 +151,91 @@
   text-align: center;
   margin: 40px;
   font-family: 'Monda', sans-serif;
+  font-size: 20px;
 }
 
 
-/*CALENDAR*/
-.fc-time-grid .fc-content-skeleton {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  right: 0;
+///*CALENDAR*/
+//.fc-time-grid .fc-content-skeleton {
+//  position: absolute;
+//  z-index: 3;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//}
+//
+//div.fc-scroller.fc-time-grid-container {
+//  height: 616px;
+//}
+
+/*SCHEDULE */
+.schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-div.fc-scroller.fc-time-grid-container {
-  height: 616px;
+.schedule-title {
+  text-align: center;
 }
+
+.harmo {
+  height: 500px;
+  width: 80%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.banner-classes {
+  background-image: url("../images/bannerClasses.jpg");
+  height: 560px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.class1 {
+  background-color: #D4CFBD;
+}
+
+.class2 {
+  background-color: #B4BAD4;
+}
+
+.class3 {
+  background-color: #D2C1CE;
+}
+
+.class4 {
+  background-color: #DFD8DC;
+}
+
+.class5 {
+  background-color: #EBE6E5;
+}
+
+.class6 {
+  background-color: #E1CEC9;
+}
+
+.class7 {
+  background-color: #FAF3DD;
+}
+
+.hidden {
+  display: none;
+}
+
+.showDesc {
+  font-size: 10px;
+}
+

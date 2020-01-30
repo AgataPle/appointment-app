@@ -25,7 +25,7 @@ export default class MyComponent extends React.Component {
                         fullDay = "false"
                         timeZone = 'local'
                         startTime = '08:00'
-                        endTime = '08:00'
+                        endTime = '18:00'
                         slotDuration = "00:30:00"
                         defaultView="timeGridWeek"
                         aspectRatio = "1.8"
@@ -41,30 +41,7 @@ export default class MyComponent extends React.Component {
                         weekends={false}
                         events={[
                             {title: 'Zajęcia 1', date: Date.parse('2020-01-27 08:00')},
-                            {title: 'Zajęcia 2', date: Date.parse('2020-01-27 10:00')},
-                            // {title: 'Zajęcia 3', date: '2020-01-27T12:00:00'},
-                            // {title: 'Zajęcia 4', date: '2020-01-27T14:00:00'},
-                            // {title: 'Zajęcia 5', date: '2020-01-27T16:00:00'},
-                            // {title: 'Zajęcia 1', date: '2020-01-28T08:00:00'},
-                            // {title: 'Zajęcia 2', date: '2020-01-28T10:00:00'},
-                            // {title: 'Zajęcia 3', date: '2020-01-28T12:00:00'},
-                            // {title: 'Zajęcia 4', date: '2020-01-28T14:00:00'},
-                            // {title: 'Zajęcia 5', date: '2020-01-28T16:00:00'},
-                            // {title: 'Zajęcia 1', date: '2020-01-29T08:00:00'},
-                            // {title: 'Zajęcia 2', date: '2020-01-29T10:00:00'},
-                            // {title: 'Zajęcia 3', date: '2020-01-29T12:00:00'},
-                            // {title: 'Zajęcia 4', date: '2020-01-29T14:00:00'},
-                            // {title: 'Zajęcia 5', date: '2020-01-29T16:00:00'},
-                            // {title: 'Zajęcia 1', date: '2020-01-30T08:00:00'},
-                            // {title: 'Zajęcia 2', date: '2020-01-30T10:00:00'},
-                            // {title: 'Zajęcia 3', date: '2020-01-30T12:00:00'},
-                            // {title: 'Zajęcia 4', date: '2020-01-30T14:00:00'},
-                            // {title: 'Zajęcia 5', date: '2020-01-30T16:00:00'},
-                            // {title: 'Zajęcia 1', date: '2020-01-31T08:00:00'},
-                            // {title: 'Zajęcia 2', date: '2020-01-31T10:00:00'},
-                            // {title: 'Zajęcia 3', date: '2020-01-31T12:00:00'},
-                            // {title: 'Zajęcia 4', date: '2020-01-31T14:00:00'},
-                            // {title: 'Zajęcia 5', date: '2020-01-31T16:00:00'}
+
                         ]}
 
                     />
