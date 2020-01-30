@@ -1,34 +1,23 @@
-import React, {Component} from 'react';
-import GoogleMapReact from 'google-map-react';
+import React from 'react';
+import L from 'leaflet';
 
-
-const AnyReactComponent = ({text}) => <div>{text}</div>;
-
-export default class SimpleMap extends Component {
-    static defaultProps = {
-        center: {
-            lat: 51.21,
-            lng: 22.70
-        },
-        zoom: 11
-    };
+export default class Map extends React.Component {
+    componentDidMount() {
+        // create map
+        this.map = L.map('map', {
+            center: [52.2356793, 21.0158183],
+            zoom: 20,
+            layers: [
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                }),
+            ]
+        });
+    }
 
     render() {
-        return (
-            // Important! Always set the container height explicitly
-            <div style={{height: '100vh', width: '100%'}}>
-                <GoogleMapReact
-                    // bootstrapURLKeys={{key: /* YOUR KEY HERE */}}
-                    defaultCenter={this.props.center}
-                    defaultZoom={this.props.zoom}
-                >
-                    <AnyReactComponent
-                        lat={51.2100177}
-                        lng={22.7010861}
-                        text="My Marker"
-                    />
-                </GoogleMapReact>
-            </div>
-        );
+        return <div id="map"></div>
     }
 }
+
+
